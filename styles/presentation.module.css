@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&display=swap');
+.container {
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid black; */
+	min-height: 30vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.pres_container {
+	/* border: 1px solid green; */
+	width: 80%;
+}
+
+.title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	font-style: italic;
+	align-self: flex-start;
+	font-family: 'Roboto', sans-serif;
+}
+
+.text {
+	font-size: 1.6rem;
+	font-family: 'Roboto', sans-serif;
+}
