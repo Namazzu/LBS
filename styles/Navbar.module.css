@@ -9,13 +9,13 @@
 	height: 80px;
 	padding: 0px 24px;
 	margin: 10px 10px;
-	width: 0 auto;
+	/* width: 0 auto; */
 }
 
 .nav_items_container {
 	display: flex;
 	flex-direction: row;
-	width: 50%;
+	width: 35%;
 	justify-content: space-evenly;
 }
 
@@ -38,4 +38,16 @@
 
 .underliner {
 	text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+	.nav_items_container {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.nav_items_container {
+		width: 20%;
+	}
 }

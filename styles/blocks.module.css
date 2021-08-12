@@ -9,6 +9,7 @@
 .block {
 	display: flex;
 	justify-content: space-evenly;
+	overflow: hidden;
 	align-items: center;
 	align-self: center;
 	width: 0 auto;
@@ -39,4 +40,15 @@
 
 .text {
 	width: 40%;
+}
+
+@media screen and (min-width: 1600px) {
+	.blocks_container {
+		width: 100%;
+	}
+	.block {
+		width: 1370px;
+		min-height: 430px;
+		max-height: 500px;
+	}
 }
