@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import { Navbar } from '../components/Navbar'
+import { Footer } from '../components/Footer'
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -8,6 +9,7 @@ function MyApp({ Component, pageProps }) {
 			<main>
 				<Component {...pageProps} />
 			</main>
+			<Footer />
 		</>
 	)
 }
