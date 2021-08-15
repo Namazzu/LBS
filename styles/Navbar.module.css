@@ -27,13 +27,13 @@
 	list-style-type: none;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
-	transition: font-size 0.7s;
+	transition: font-size 0.2s;
 }
 
 .nav_item:hover {
 	font-size: 24px;
 	font-weight: 600;
-	transition: font-size 0.7s;
+	transition: font-size 0.2s;
 }
 
 .underliner {

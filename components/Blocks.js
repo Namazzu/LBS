@@ -2,7 +2,7 @@ import Image from 'next/image'
 import brico1 from '../public/brico1.jpeg'
 import brico2 from '../public/brico2.jpeg'
 import brico3 from '../public/brico3.jpeg'
-import style from '../styles/blocks.module.css'
+import style from '../styles/Blocks.module.css'
 export default function Blocks() {
 	return (
 		<div className={style.blocks_container}>

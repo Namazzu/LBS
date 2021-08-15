@@ -1,4 +1,4 @@
-import style from '../styles/presentation.module.css'
+import style from '../styles/Presentation.module.css'
 export default function Presentation() {
 	return (
 		<div className={style.container}>
