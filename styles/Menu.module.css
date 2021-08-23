@@ -1,0 +1,50 @@
+.menu_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: #fff;
+	height: 100vh;
+	padding: 2rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	transition: transform 0.3s ease-in-out;
+	border-left: 8px solid coral;
+}
+
+.menu_item {
+	font-size: 2rem;
+	text-transform: uppercase;
+	padding: 1rem 0;
+	margin: 1rem 0;
+	font-weight: bold;
+	letter-spacing: 0.5rem;
+	text-decoration: none;
+	transition: color 0.3s linear;
+}
+.menu_item:hover {
+	color: coral;
+}
+
+.currentPage {
+	color: coral;
+}
+
+.disabled {
+	transform: translateX(100%);
+}
+
+.actived {
+	transform: translate(0);
+}
+
+@media screen and (max-width: 576px) {
+	.menu_container {
+		width: 100%;
+	}
+	.menu_item {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+}
