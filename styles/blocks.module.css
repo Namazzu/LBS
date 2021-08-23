@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 .blocks_container {
 	display: flex;
-	/* border: 1px solid red; */
 	flex-direction: column;
 	margin-top: 7vh;
 }
@@ -18,7 +17,7 @@
 		0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
 	font-family: 'Noto Sans JP', sans-serif;
 	padding: 30px 15px;
-	margin: 80px 24px;
+	margin: 40px 24px;
 	transition: box-shadow 0.5s;
 }
 
@@ -51,7 +50,7 @@
 		max-height: 500px;
 	}
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
 	.block {
 		flex-direction: column;
 		padding: 0px;
