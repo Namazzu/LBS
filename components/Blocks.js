@@ -1,48 +1,60 @@
 import Image from 'next/image'
-import brico1 from '../public/brico1.jpeg'
-import brico2 from '../public/brico2.jpeg'
-import brico3 from '../public/brico3.jpeg'
+import conception from '../public/conception.jpg'
+import agencement from '../public/agencement.jpg'
+import implementation from '../public/implementation.jpg'
 import style from '../styles/blocks.module.css'
 export default function Blocks() {
-	return (
-		<div className={style.blocks_container}>
-			<div className={style.block}>
-				<div className={style.image_item}>
-					<Image src={brico1} alt='picture of maker1' layout='responsive' />
-				</div>
-				<span className={style.text}>
-				Notre entreprise sera à votre écoute, afin de construire et réaliser avec vous vos différents
-projets
-Nous resterons à vos coté afin de vous accompagner dans les différentes étapes de vos
-Entreprises.
-				</span>
-			</div>
-			<div className={`${style.block} ${style.reverse}`}>
-				<div className={style.image_item}>
-					<Image src={brico2} alt='picture of maker1' layout='responsive' />
-				</div>
-				<span className={style.text}>
-					Lorem Ipsum is simply dummy text of the printing and typesetting
-					industry. Lorem Ipsum has been the industry's standard dummy text ever
-					since the 1500s, when an unknown printer took a galley of type and
-					scrambled it to make a type specimen book. It has survived not only
-					five centuries, but also the leap into electronic typesetting,
-					remaining essentially unchanged
-				</span>
-			</div>
-			<div className={style.block}>
-				<div className={style.image_item}>
-					<Image src={brico3} alt='picture of maker1' layout='responsive' />
-				</div>
-				<span className={style.text}>
-					Lorem Ipsum is simply dummy text of the printing and typesetting
-					industry. Lorem Ipsum has been the industry's standard dummy text ever
-					since the 1500s, when an unknown printer took a galley of type and
-					scrambled it to make a type specimen book. It has survived not only
-					five centuries, but also the leap into electronic typesetting,
-					remaining essentially unchanged
-				</span>
-			</div>
-		</div>
-	)
+  return (
+    <div className={style.blocks_container}>
+      <div className={style.block}>
+        <div className={style.image_item}>
+          <Image src={conception} alt='picture of maker1' layout='responsive' />
+        </div>
+        <div className={style.text}>
+          <h2>Conseil et Accompagnement</h2>
+          <p>
+            De la conception à la réalisation de votre projet, LBS vous
+            accompagne et vous conseille pour optimiser votre espace.
+          </p>
+          <p>
+            Vous serez guider sur les différents agencements nécessaires à la
+            réalisation du projet, ainsi que sur les choix des gammes de
+            produits.
+          </p>
+        </div>
+      </div>
+      <div className={`${style.block} ${style.reverse}`}>
+        <div className={style.image_item}>
+          <Image src={agencement} alt='picture of maker1' layout='responsive' />
+        </div>
+        <div className={style.text}>
+          <h2>Agencement</h2>
+          <p>
+            Nouveau point de vente ? Nouveau rayon ? Ou nouvelle opération
+            commerciale ? L.B.S s'occupe de monter ou démonter votre mobilier et
+            pourra vous proposer certains compléments d’aménagements pour
+            optimiser votre espace.
+          </p>
+        </div>
+      </div>
+      <div className={style.block}>
+        <div className={style.image_item}>
+          <Image
+            src={implementation}
+            alt='picture of maker1'
+            layout='responsive'
+          />
+        </div>
+        <div className={style.text}>
+          <h2>Implémentation et Remodeling</h2>
+          <p>
+            Implémentation ou Remodeling complet ou partiel de vos magasins,
+            avec ou sans planogramme ou rétroplanning, avec public ou sans, LBS
+            utilisera toute sa maîtrise du métier pour répondre à vos besoins.
+            Contactez-nous discuter de votre projet.
+          </p>
+        </div>
+      </div>
+    </div>
+  )
 }
