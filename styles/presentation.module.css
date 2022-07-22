@@ -1,28 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&display=swap');
 .container {
-	display: flex;
-	flex-direction: column;
-	min-height: 30vh;
-	max-width: 1370px;
-	justify-content: center;
-	align-items: center;
-	margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  max-width: 1370px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
 }
 
 .pres_container {
-	width: 80%;
+  width: 80%;
 }
 
 .title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	font-style: italic;
-	align-self: flex-start;
-	font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: italic;
+  align-self: flex-start;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title > span {
+  color: rgba(252, 174, 38, 0.945);
 }
 
 .text {
-	margin-top: 64px;
-	font-size: 1.6rem;
-	font-family: 'Roboto', sans-serif;
+  margin-top: 64px;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.citation {
+  color: rgb(75, 73, 73);
+  font-style: bold;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.citation_container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+
+.block_citation {
+  display: inline-block;
+  background: rgba(252, 174, 38, 0.1);
+  border-left: 10px solid rgba(252, 174, 38, 0.945);
+  padding: 0.5em 10px;
+  quotes: '\201C''\201D''\2018''\2019';
+  margin-right: -64px;
+}
+.block_citation:before {
+  color: black;
+  /* color: #ccc; */
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.block_citation:after {
+  /* color: #ccc; */
+  color: black;
+
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  /* margin-right: 0.25em; */
+  vertical-align: -0.4em;
+}
+.block_citation .citation {
+  display: inline;
 }
