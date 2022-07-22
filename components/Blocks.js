@@ -46,10 +46,10 @@ export default function Blocks() {
           />
         </div>
         <div className={style.text}>
-          <h2>Implémentation et Remodeling</h2>
+          <h2>Implantation et Remodeling</h2>
           <p>
-            Implémentation ou Remodeling complet ou partiel de vos magasins,
-            avec ou sans planogramme ou rétroplanning, avec public ou sans, LBS
+            Implantation ou Remodeling complet ou partiel de vos magasins, avec
+            ou sans planogramme ou rétroplanning, avec public ou sans, LBS
             utilisera toute sa maîtrise du métier pour répondre à vos besoins.
             Contactez-nous discuter de votre projet.
           </p>
