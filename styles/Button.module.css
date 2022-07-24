@@ -22,3 +22,14 @@
   color: rgba(252, 174, 38, 0.945);
   border-color: rgba(252, 174, 38, 0.945);
 }
+
+@media screen and (min-width: 1600px) {
+  .container {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    justify-content: center;
+  }
+}

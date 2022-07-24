@@ -51,7 +51,7 @@
   border-left: 10px solid rgba(252, 174, 38, 0.945);
   padding: 0.5em 10px;
   quotes: '\201C''\201D''\2018''\2019';
-  margin-right: -64px;
+  margin-right: -42px;
 }
 .block_citation:before {
   color: black;
@@ -75,4 +75,15 @@
 }
 .block_citation .citation {
   display: inline;
+}
+
+@media screen and (min-width: 1600px) {
+  .block_citation {
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .block_citation {
+    line-height: 48px;
+  }
 }
