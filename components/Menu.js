@@ -7,10 +7,10 @@ export const Menu = ({ open, currentPage, activePage }) => {
       href: '/',
       content: 'Home',
     },
-    {
-      href: '/contact',
-      content: 'Contact',
-    },
+    // {
+    //   href: '/contact',
+    //   content: 'Contact',
+    // },
   ]
 
   return (
