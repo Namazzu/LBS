@@ -1,0 +1,42 @@
+.form_box {
+  width: 100%;
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_container {
+  border: 10px solid rgba(252, 174, 38, 0.945);
+  border-radius: 10% 10%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(252, 174, 38, 0.1);
+}
+
+.input_field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-decoration: none;
+}
+
+.input_field > input {
+  margin-bottom: 5%;
+  margin-top: 8px;
+  width: 100%;
+  padding: 10px;
+}
+
+.input_field > textarea {
+  margin-top: 8px;
+  padding: 5px;
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 24px;
+}
