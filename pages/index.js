@@ -3,7 +3,7 @@ import Presentation from '../components/Presentation'
 import Blocks from '../components/Blocks'
 import styles from '../styles/Home.module.css'
 
-import Button from '../components/Button'
+import Contact from '../components/Contact'
 
 export default function Home() {
   return (
@@ -19,7 +19,9 @@ export default function Home() {
         <section>
           <Blocks />
         </section>
-        <Button />
+        <section>
+          <Contact />
+        </section>
       </div>
     </>
   )

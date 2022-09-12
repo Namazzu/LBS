@@ -27,7 +27,7 @@ export default function Blocks() {
         <div className={style.image_item}>
           <Image src={agencement} alt='picture of maker1' layout='responsive' />
         </div>
-        <div className={style.text}>
+        <div className={style.text} style={{ marginLeft: '5%' }}>
           <h2>Agencement</h2>
           <p>
             Nouveau point de vente ? Nouveau rayon ? Ou nouvelle opération
