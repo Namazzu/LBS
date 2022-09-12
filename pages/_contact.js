@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Widget } from '@typeform/embed-react'
 import '@typeform/embed/build/css/widget.css'
-import styles from '../styles/contact.module.css'
+import styles from '../styles/Contact.module.css'
 
 const formId = 'GC2cdoHh'
 
