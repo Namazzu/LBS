@@ -9,7 +9,7 @@ export default function Presentation() {
         <div className={style.text}>
           <p>
             Entreprise jeune et dynamique créée en Septembre 2021, spécialisée
-            dans le marchandising, l’agencement et l’implémentation de magasins.
+            dans le marchandising, l’agencement et l’implantation de magasins.
           </p>
           <p>
             Grâce à nos diverses expériences, nos équipes mettront tout en œuvre
