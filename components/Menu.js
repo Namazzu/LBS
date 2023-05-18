@@ -22,14 +22,14 @@ export const Menu = ({ open, currentPage, activePage }) => {
       {data.map(({ href, content }, index) => {
         return (
           <Link href={href} key={index}>
-            <a
+            <div
               className={`${style.menu_item} ${
                 style[currentPage === href ? 'currentPage' : '']
               }`}
               onClick={activePage}
             >
               {content}
-            </a>
+            </div>
           </Link>
         )
       })}
