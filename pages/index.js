@@ -19,7 +19,7 @@ export default function Home() {
         <section>
           <Blocks />
         </section>
-        <section>
+        <section className='mt-20'>
           <Contact />
         </section>
       </div>
