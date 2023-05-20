@@ -3,6 +3,7 @@ import Presentation from '../components/Presentation'
 import Blocks from '../components/Blocks'
 
 import Contact from '../components/Contact'
+import Testimonial from '../components/Testimonial'
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
         </section>
         <section>
           <Blocks />
+        </section>
+        <section className='flex justify-center'>
+          <Testimonial />
         </section>
         <section className='mt-20'>
           <Contact />
