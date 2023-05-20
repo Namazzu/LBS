@@ -11,7 +11,7 @@ export default function Contact() {
         <img
           className='h-full w-full object-cover'
           src='https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply'
-          alt=''
+          alt='people who work at a desk'
         />
         <svg
           viewBox='0 0 926 676'
@@ -40,7 +40,7 @@ export default function Contact() {
       </div>
       <div className='relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40'>
         <div className='pl-6 pr-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32'>
-          <div className='relative isolate bg-transparent	'>
+          <div className='relative isolate '>
             <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-1'>
               <div className='relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48'>
                 <div className='mx-auto max-w-xl lg:mx-0 lg:max-w-lg'>
