@@ -1,6 +1,6 @@
 const Testimonial = () => {
   return (
-    <div className='w-8/12  bg-white pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32'>
+    <div className='w-10/12 bg-white  pb-16 pt-24 sm:pb-24 sm:pt-32 md:w-8/12 xl:pb-32'>
       <div className='bg-transparent pb-20 sm:pb-24 xl:pb-0'>
         <div className='mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch'>
           <div className='-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none'>
