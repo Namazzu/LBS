@@ -35,10 +35,10 @@ const data = [
 
 const Blocks = () => {
   return (
-    <div className='mt-20 flex flex-col lg:mt-60'>
+    <div className='mt-10 flex flex-col lg:mt-60'>
       {data.map((block) => (
         <div
-          className={`mx-3 my-6 flex	 w-full flex-col items-center justify-evenly self-center overflow-hidden px-4	py-10 font-sans shadow-lg lg:w-10/12 ${block.classesNames}`}
+          className={`mx-3 my-16 flex	 w-full flex-col items-center justify-evenly self-center overflow-hidden px-4	py-10 font-sans shadow-lg lg:w-10/12 ${block.classesNames}`}
         >
           <div className='w-full lg:w-2/5'>
             <Image src={block.img} alt='picture of maker1' height={450} />
