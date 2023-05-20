@@ -36,8 +36,9 @@ const data = [
 const Blocks = () => {
   return (
     <div className='mt-10 flex flex-col lg:mt-40'>
-      {data.map((block) => (
+      {data.map((block, i) => (
         <div
+          key={`block_${block.title}_${i}`}
           className={`mx-3 my-16 flex	 w-full flex-col items-center justify-evenly self-center overflow-hidden px-4	py-10 font-sans shadow-md lg:w-10/12 ${block.classesNames}`}
         >
           <div className='w-full lg:w-2/5'>
