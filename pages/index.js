@@ -4,6 +4,7 @@ import Blocks from '../components/Blocks'
 
 import Contact from '../components/Contact'
 import Testimonial from '../components/Testimonial'
+import Divider from '../components/Divider'
 
 export default function Home() {
   return (
@@ -17,12 +18,15 @@ export default function Home() {
         <section>
           <Presentation />
         </section>
+
         <section>
           <Blocks />
         </section>
+        <Divider />
         <section className='flex justify-center'>
           <Testimonial />
         </section>
+
         <section className='mt-20'>
           <Contact />
         </section>

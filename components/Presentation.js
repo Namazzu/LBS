@@ -1,12 +1,12 @@
 export default function Presentation() {
   return (
-    <div className='flex flex-col justify-center items-center mt-8 '>
-      <div className='flex justify-center flex-col w-10/12'>
-        <h2 className='text-5xl lg:text-6xl	mt-10	font-bold	italic self-center	font-sans	'>
+    <div className='mt-8 flex flex-col items-center justify-center '>
+      <div className='flex w-10/12 flex-col justify-center'>
+        <h2 className='mt-10 self-center	font-sans	text-5xl	font-bold italic	lg:text-6xl	'>
           Bienvenue sur{' '}
           <span className='text-amber-500	'>Les Bons Services</span>
         </h2>
-        <div className='mt-20 text-2xl lg:text-3xl	font-sans font-light	'>
+        <div className='mt-24 font-sans text-2xl font-light	lg:mt-40 lg:text-3xl	'>
           <p>
             Entreprise jeune et dynamique créée en Septembre 2021, spécialisée
             dans le marchandising, l’agencement et l’implantation de magasins.
@@ -16,9 +16,9 @@ export default function Presentation() {
             pour réaliser vos différents projets afin de développer votre
             chiffre d’affaire et le panier moyen de vos clients.
           </p>
-          <div className='flex w-full justify-end mt-32'>
-            <div className='bg-orange-100 opacity-85 border-l-8 border-solid border-orange-300	 p-3'>
-              <p className='text-gray-600	font-light	text-3xl'>
+          <div className='mt-32 flex w-full justify-end'>
+            <div className='opacity-85 border-l-8 border-solid border-orange-300 bg-orange-100 p-10 lg:p-12'>
+              <p className='text-3xl	font-light	text-gray-600'>
                 Parce que chaque partenariat commence par une rencontre.
               </p>
             </div>
