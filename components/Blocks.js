@@ -46,8 +46,10 @@ const Blocks = () => {
           </div>
           <div className='flex w-full flex-col items-center lg:w-5/12'>
             <h2 className='my-8 flex text-4xl'>{block.title}</h2>
-            {block.content.map((paragraph) => (
-              <p className='mb-3 text-2xl font-light'>{paragraph}</p>
+            {block.content.map((paragraph, i) => (
+              <p key={`paragraph_${i}`} className='mb-3 text-2xl font-light'>
+                {paragraph}
+              </p>
             ))}
           </div>
         </div>
