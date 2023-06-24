@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import Presentation from '../components/Presentation'
 import Blocks from '../components/Blocks'
+import Presentation from '../components/Presentation'
 
 import Contact from '../components/Contact'
+import Divider from '../components/Divider'
 
 export default function Home() {
   return (
@@ -16,10 +17,16 @@ export default function Home() {
         <section>
           <Presentation />
         </section>
+
         <section>
           <Blocks />
         </section>
-        <section>
+        <Divider />
+        {/* <section className='flex justify-center'>
+          <Testimonial />
+        </section> */}
+
+        <section className='mt-20'>
           <Contact />
         </section>
       </div>
