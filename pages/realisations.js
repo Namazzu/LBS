@@ -27,7 +27,7 @@ const Realisations = () => {
         imagesFilesNames.map((arrSixElem, i) => {
           return (
             <div key={`arrSixPictures_${i}`} className='mb-8 flex  flex-wrap'>
-              <div className='flex w-1/2 flex-wrap'>
+              <div className='flex w-full flex-wrap lg:w-1/2'>
                 {arrSixElem[0] && (
                   <div className='w-1/2 p-1 md:p-2'>
                     <Image
@@ -62,7 +62,7 @@ const Realisations = () => {
                   </div>
                 )}
               </div>
-              <div className='flex w-1/2 flex-wrap'>
+              <div className='flex w-full flex-wrap lg:w-1/2'>
                 {arrSixElem[3] && (
                   <div className='w-full p-1 md:p-2'>
                     <Image
