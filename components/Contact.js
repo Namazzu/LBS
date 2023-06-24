@@ -6,7 +6,7 @@ import {
 
 import Image from 'next/image'
 
-import contactSVG from '../public/undraw_agreement_re_d4dv.svg'
+import contactSVG from '../public/home/undraw_agreement_re_d4dv.svg'
 
 export default function Contact() {
   return (

@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import implementation from '../public/undraw_chore_list_re_2lq8.svg'
-import conception from '../public/undraw_scrum_board_re_wk7v.svg'
-import agencement from '../public/undraw_under_construction_-46-pa.svg'
+import implementation from '../public/home/undraw_chore_list_re_2lq8.svg'
+import conception from '../public/home/undraw_scrum_board_re_wk7v.svg'
+import agencement from '../public/home/undraw_under_construction_-46-pa.svg'
 
 const data = [
   {

@@ -1,5 +1,5 @@
-import style from '../styles/Menu.module.css'
 import Link from 'next/link'
+import style from '../styles/Menu.module.css'
 
 export const Menu = ({ open, currentPage, activePage }) => {
   const data = [
@@ -7,10 +7,10 @@ export const Menu = ({ open, currentPage, activePage }) => {
       href: '/',
       content: 'Home',
     },
-    // {
-    //   href: '/contact',
-    //   content: 'Contact',
-    // },
+    {
+      href: '/realisations',
+      content: 'Réalisations',
+    },
   ]
 
   return (
