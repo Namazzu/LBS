@@ -1,9 +1,9 @@
 import { Analytics } from '@vercel/analytics/react'
-import '../styles/globals.css'
-import { Navbar } from '../components/Navbar'
-import { Footer } from '../components/Footer'
 import Head from 'next/head'
 import Script from 'next/script'
+import { Footer } from '../components/Footer'
+import { Navbar } from '../components/Navbar'
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -28,11 +28,11 @@ function MyApp({ Component, pageProps }) {
         <title>L.B.S</title>
         <meta
           name='google-site-verification'
-          content='O1Cih9CGimgvelsPoaGAvmaglP7d4aaH01EZJr_fxfE'
+          content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}
         />
       </Head>
       <Navbar />
-      <main>
+      <main className='m-0'>
         <Component {...pageProps} />
         <Analytics />
       </main>
