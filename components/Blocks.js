@@ -25,7 +25,7 @@ const data = [
   {
     img: implementation,
     title: 'Implantation et Remodeling',
-    classesNames: 'lg:flex-row lg:py-4',
+    classesNames: 'lg:flex-row lg:py-4 lg:px-4',
     content: [
       'Implantation et Remodeling complet ou partiel de vos magasins, avec ou sans planogramme et rétroplanning, avec public ou sans.',
       'LBS utilisera toute sa maîtrise du métier pour répondre à vos besoins. Contactez-nous pour discuter de votre projet.',
