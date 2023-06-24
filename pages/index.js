@@ -26,6 +26,7 @@ export default function Home() {
         <section className='flex justify-center'>
           <Testimonial />
         </section>
+        <Divider />
 
         <section className='mt-20'>
           <Contact />
