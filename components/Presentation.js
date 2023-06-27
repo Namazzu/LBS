@@ -1,6 +1,12 @@
+import { motion } from 'framer-motion'
+
 export default function Presentation() {
   return (
-    <div className='mt-8 flex flex-col items-center justify-center '>
+    <motion.div
+      className='mt-8 flex flex-col items-center justify-center'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <div className='flex w-10/12 flex-col justify-center'>
         <h2 className='mt-10 self-center	font-sans	text-5xl	font-bold italic	lg:text-6xl	'>
           Bienvenue sur{' '}
@@ -25,6 +31,6 @@ export default function Presentation() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
