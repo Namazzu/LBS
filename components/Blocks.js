@@ -3,6 +3,8 @@ import implementation from '../public/undraw_chore_list_re_2lq8.svg'
 import conception from '../public/undraw_scrum_board_re_wk7v.svg'
 import agencement from '../public/undraw_under_construction_-46-pa.svg'
 
+import { motion } from 'framer-motion'
+
 const data = [
   {
     img: conception,
@@ -17,6 +19,7 @@ const data = [
     img: agencement,
     title: 'Agencement',
     classesNames: 'lg:flex-row-reverse lg:py-4',
+    reverse: true,
     content: [
       'Nouveau point de vente ? Nouveau rayon ? Ou nouvelle opération commerciale ?',
       "LBS s'occupe de monter ou démonter votre mobilier et pourra vous proposer certains compléments d’aménagements pour optimiser votre espace.",
@@ -33,6 +36,38 @@ const data = [
   },
 ]
 
+const textRight = {
+  offscreen: {
+    x: 100,
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      velocity: 1,
+      duration: 1.2,
+    },
+  },
+}
+
+const textLeft = {
+  offscreen: {
+    x: -100,
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      velocity: 1,
+      duration: 1.2,
+    },
+  },
+}
+
 const Blocks = () => {
   return (
     <div className='mt-10 flex flex-col lg:mt-40'>
@@ -46,11 +81,18 @@ const Blocks = () => {
           </div>
           <div className='flex w-full flex-col items-center lg:w-5/12'>
             <h2 className='my-8 flex text-4xl'>{block.title}</h2>
-            {block.content.map((paragraph, i) => (
-              <p key={`paragraph_${i}`} className='mb-3 text-2xl font-light'>
-                {paragraph}
-              </p>
-            ))}
+            <motion.div
+              initial='offscreen'
+              whileInView='onscreen'
+              viewport={{ once: true, amount: 0.6 }}
+              variants={block.reverse ? textLeft : textRight}
+            >
+              {block.content.map((paragraph, i) => (
+                <p key={`paragraph_${i}`} className='mb-3 text-2xl font-light'>
+                  {paragraph}
+                </p>
+              ))}
+            </motion.div>
           </div>
         </div>
       ))}
