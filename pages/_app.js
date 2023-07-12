@@ -2,7 +2,6 @@ import { Analytics } from '@vercel/analytics/react'
 import Head from 'next/head'
 import Script from 'next/script'
 import { Footer } from '../components/Footer'
-import { Navbar } from '../components/Navbar'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
@@ -31,7 +30,7 @@ function MyApp({ Component, pageProps }) {
           content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}
         />
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className='m-0'>
         <Component {...pageProps} />
         <Analytics />

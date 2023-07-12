@@ -4,19 +4,15 @@ import {
   PhoneIcon,
 } from '@heroicons/react/24/outline'
 
-import Image from 'next/image'
-
-import contactSVG from '../public/undraw_agreement_re_d4dv.svg'
-
 export default function Contact() {
   return (
     <div className='relative w-full bg-gray-900/90'>
       <div className='relative h-80 overflow-hidden bg-amber-300/20 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2'>
-        <Image
-          className='h-full w-full p-12'
+        <img
+          className='h-full w-full object-scale-down p-12'
           priority
-          src={contactSVG}
-          alt='people who work at a desk'
+          src='https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80'
+          alt="la passion nous a conduits jusqu'ici"
         />
         <svg
           viewBox='0 0 926 676'

@@ -18,10 +18,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-main {
-  display: flex;
-  min-height: 90vh;
-  margin: 20px 10px;
-  justify-content: center;
-}
