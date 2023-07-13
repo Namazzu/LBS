@@ -155,12 +155,12 @@ export default function Presentation() {
                     commerciaux. Avec une couverture nationale, nous proposons
                     des solutions adaptées à votre marché local.
                   </p>
-                  <div className='mt-10 flex items-center gap-x-6'>
+                  <div className='mt-10 flex items-center justify-center gap-x-6 lg:justify-start'>
                     <Link
                       href='#'
-                      className='rounded-md bg-amber-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600'
+                      className='rounded-md  bg-amber-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600'
                     >
-                      Get started
+                      Contactez-nous
                     </Link>
                   </div>
                 </div>
