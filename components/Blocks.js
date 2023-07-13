@@ -102,7 +102,7 @@ const Blocks = () => {
             <div
               className={`absolute  top-0 ${
                 block.reverse ? 'left-1/2 right-0 ' : 'left-0 -ml-24'
-              } -z-10  transform-gpu overflow-hidden blur-3xl `}
+              } -z-10  hidden transform-gpu overflow-hidden blur-3xl lg:block`}
               aria-hidden='true'
             >
               <div
