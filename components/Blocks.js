@@ -5,29 +5,36 @@ const data = [
     img: 'https://images.unsplash.com/photo-1620714223589-a0ad3b4aaac9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
     title: 'Conseil et Accompagnement',
     classesNames: 'lg:flex-row lg:py-4',
+    // content: [
+    //   'De la conception à la réalisation de votre projet, LBS vous accompagne et vous conseille pour optimiser votre espace.',
+    //   'Vous serez guider sur les différents agencements nécessaires à la réalisation du projet, ainsi que sur les choix des gammes de produits.',
+    // ],
     content: [
-      'De la conception à la réalisation de votre projet, LBS vous accompagne et vous conseille pour optimiser votre espace.',
-      'Vous serez guider sur les différents agencements nécessaires à la réalisation du projet, ainsi que sur les choix des gammes de produits.',
+      'De la conception à la réalisation de votre projet, LBS est votre partenaire de confiance, vous offrant un accompagnement expert pour optimiser votre espace.',
+      "Nous vous guiderons dans le choix des agencements nécessaires à la concrétisation de votre projet, en vous proposant des solutions adaptées à vos besoins spécifiques. De plus, nous vous conseillerons dans le choix des gammes de produits, en veillant à ce qu'ils correspondent parfaitement à votre image de marque et à vos objectifs commerciaux.",
+      "Notre équipe expérimentée et passionnée mettra tout en œuvre pour réaliser votre vision, en fournissant des recommandations personnalisées et en supervisant chaque étape du processus. Faites confiance à LBS pour optimiser votre espace et atteindre l'excellence dans votre aménagement.",
     ],
   },
   {
     img: 'https://images.unsplash.com/photo-1529957018945-07aed3538ad5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
     title: 'Agencement',
-    classesNames: 'lg:flex-row-reverse  lg:mt-48 lg:h-[500px]',
+    classesNames: 'lg:flex-row-reverse  lg:mt-48 ',
     reverse: true,
     content: [
-      'Nouveau point de vente ? Nouveau rayon ? Ou nouvelle opération commerciale ?',
-      "LBS s'occupe de monter ou démonter votre mobilier et pourra vous proposer certains compléments d’aménagements pour optimiser votre espace.",
+      "Que vous ouvriez un nouveau point de vente, un nouveau rayon ou que vous prépariez une nouvelle opération commerciale, LBS est là pour assurer le montage ou le démontage de votre mobilier, en vous proposant des compléments d'aménagement pour optimiser votre espace.",
+      "Notre équipe compétente et expérimentée se charge de toutes les étapes nécessaires, en veillant à ce que votre mobilier soit installé ou retiré avec précision et efficacité. De plus, nous pouvons vous conseiller sur des aménagements complémentaires pour maximiser l'utilisation de votre espace et améliorer l'expérience de vos clients.",
+      'Faites confiance à LBS pour une gestion professionnelle et complète de vos besoins en matière de montage et démontage de mobilier, afin de garantir une mise en place fluide et réussie de votre projet.',
     ],
-    containerImgClassesNames: 'h-[300px]',
+    containerImgClassesNames: 'h-[400px]',
   },
   {
     img: 'https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
     title: 'Implantation et Remodeling',
-    classesNames: 'lg:flex-row lg:py-4 lg:mt-48 lg:h-[400px] ',
+    classesNames: 'lg:flex-row lg:py-4 lg:mt-48',
     content: [
-      'Implantation et Remodeling complet ou partiel de vos magasins, avec ou sans planogramme et rétroplanning, avec public ou sans.',
-      'LBS utilisera toute sa maîtrise du métier pour répondre à vos besoins. Contactez-nous pour discuter de votre projet.',
+      "LBS est spécialisé dans l'implantation et le remodelage complet ou partiel de vos magasins, avec ou sans planogramme et rétroplanning, selon vos préférences.",
+      "Nous mettons à profit notre expertise pour répondre précisément à vos besoins. N'hésitez pas à nous contacter afin que nous puissions discuter en détail de votre projet.",
+      "Notre équipe est prête à mobiliser toutes ses compétences pour vous offrir un service de qualité et garantir la réussite de votre projet d'implantation ou de remodelage de magasins.",
     ],
   },
 ]
@@ -100,21 +107,6 @@ const Blocks = () => {
               />
             </svg>
             <div
-              className={`absolute  top-0 ${
-                block.reverse ? 'left-1/2 right-0 ' : 'left-0 -ml-24'
-              } -z-10  hidden transform-gpu overflow-hidden blur-3xl lg:block`}
-              aria-hidden='true'
-            >
-              <div
-                className='aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#f59f0b] to-[#fcd34d] opacity-30'
-                style={{
-                  clipPath:
-                    'polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)',
-                }}
-              />
-            </div>
-
-            <div
               className={`mx-3 flex h-full w-full flex-col items-center justify-evenly overflow-hidden  px-4 py-10	font-sans lg:my-16  lg:w-10/12 ${block.classesNames}`}
             >
               <div
@@ -140,7 +132,7 @@ const Blocks = () => {
                   {block.content.map((paragraph, i) => (
                     <p
                       key={`paragraph_${i}`}
-                      className='mb-3 text-lg font-light leading-8 text-gray-600'
+                      className='mb-3 text-lg  leading-8 text-gray-600 lg:max-w-none'
                     >
                       {paragraph}
                     </p>
