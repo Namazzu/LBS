@@ -49,8 +49,9 @@ export default function Contact() {
                     Contact
                   </h2>
                   <p className='mt-6 text-lg leading-8 text-slate-100	'>
-                    Franck FEDZAK et Karine GEHIN collaboratrice RH, seront
-                    ravis d'échanger avec vous pour réaliser votre projet.
+                    Franck FEDZAK et Karine GEHIN, sont disponibles pour
+                    discuter et concrétiser votre projet. Contactez-nous dès
+                    maintenant.
                   </p>
                   <dl className='mt-10 space-y-4 text-base leading-7 text-slate-100'>
                     <div className='flex gap-x-4'>
