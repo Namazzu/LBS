@@ -14,6 +14,7 @@ const data = [
       "Nous vous guiderons dans le choix des agencements nécessaires à la concrétisation de votre projet, en vous proposant des solutions adaptées à vos besoins spécifiques. De plus, nous vous conseillerons dans le choix des gammes de produits, en veillant à ce qu'ils correspondent parfaitement à votre image de marque et à vos objectifs commerciaux.",
       "Notre équipe expérimentée et passionnée mettra tout en œuvre pour réaliser votre vision, en fournissant des recommandations personnalisées et en supervisant chaque étape du processus. Faites confiance à LBS pour optimiser votre espace et atteindre l'excellence dans votre aménagement.",
     ],
+    containerImgClassesNames: 'self-end pb-4',
   },
   {
     img: 'https://images.unsplash.com/photo-1529957018945-07aed3538ad5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
@@ -25,7 +26,7 @@ const data = [
       "Notre équipe compétente et expérimentée se charge de toutes les étapes nécessaires, en veillant à ce que votre mobilier soit installé ou retiré avec précision et efficacité. De plus, nous pouvons vous conseiller sur des aménagements complémentaires pour maximiser l'utilisation de votre espace et améliorer l'expérience de vos clients.",
       'Faites confiance à LBS pour une gestion professionnelle et complète de vos besoins en matière de montage et démontage de mobilier, afin de garantir une mise en place fluide et réussie de votre projet.',
     ],
-    containerImgClassesNames: 'h-[400px]',
+    containerImgClassesNames: 'h-[450px] self-end',
   },
   {
     img: 'https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
@@ -110,7 +111,7 @@ const Blocks = () => {
               className={`mx-3 flex h-full w-full flex-col items-center justify-evenly overflow-hidden  px-4 py-10	font-sans lg:my-16  lg:w-10/12 ${block.classesNames}`}
             >
               <div
-                className={`h-full w-full overflow-hidden rounded-xl lg:w-2/5 ${block.containerImgClassesNames}`}
+                className={`w-full overflow-hidden rounded-xl lg:w-2/5 ${block.containerImgClassesNames}`}
               >
                 <img
                   src={block.img}
