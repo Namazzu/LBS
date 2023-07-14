@@ -126,7 +126,7 @@ const Blocks = () => {
                 <motion.div
                   initial='offscreen'
                   whileInView='onscreen'
-                  viewport={{ once: true, amount: 0.6 }}
+                  viewport={{ once: true, amount: 0.2 }}
                   variants={block.reverse ? textLeft : textRight}
                 >
                   {block.content.map((paragraph, i) => (
